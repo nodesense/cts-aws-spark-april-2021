@@ -28,3 +28,8 @@ conda deactivate
 ```
 
 
+## Hadoop Binary 
+
+https://github.com/steveloughran/winutils
+
+Download zip files
