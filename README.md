@@ -32,4 +32,13 @@ conda deactivate
 
 https://github.com/steveloughran/winutils
 
-Download zip files
+Download zip file
+
+
+Extract the zip file
+
+Copy hadoop-2.7.1 to c: drive
+
+Add environment variable HADOOP_HOME and set to C:\hadoop-2.7.1
+
+
