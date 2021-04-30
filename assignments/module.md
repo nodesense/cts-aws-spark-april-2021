@@ -22,4 +22,8 @@ sports - directory
 
         print game object 
         print player object 
+        
+        
+in anoconda prompt,
+ c:\...\sports> python play.py
 ```
