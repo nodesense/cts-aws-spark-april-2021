@@ -14,6 +14,11 @@ Python 3.7 is needed
 Download spark
 
 ```
+ssh ubuntu@192.168.93.128
+```
+
+
+```
 wget https://downloads.apache.org/spark/spark-2.4.7/spark-2.4.7-bin-hadoop2.7.tgz
 
 ```
