@@ -78,11 +78,11 @@ python3.7
 ```
 cd ~
 
-nano .bashrc
+nano .profile
 
 ```
-
-paste below
+ 
+paste below at end of the file
 
 
 ```
