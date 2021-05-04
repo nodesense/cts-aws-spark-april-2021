@@ -1,3 +1,9 @@
+# Linux ssh
+
+```
+ssh ubuntu@192.168.93.128
+```
+
 # to install Anaconda 3.7 along with 3.8
 
 Open Anaconda prompt
