@@ -4,6 +4,31 @@
 ssh ubuntu@192.168.93.128
 ```
 
+```
+to start hadoop cluster,
+
+below command to be run every time, when we reboot ubuntu to start hadoop cluster
+
+below command shall prompt to enter password 4 times
+
+$HADOOP_HOME/sbin/start-all.sh
+
+Firefox with in ubuntu,
+
+http://192.168.93.128:50070
+
+
+To check yarn 
+
+http://192.168.93.128:8088/cluster
+
+
+
+
+
+```
+
+
 
 ```
 sudo apt install openssh-server
