@@ -18,3 +18,17 @@ paste below content
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
+
+
+To save the file, 
+
+```
+Ctrl + O
+
+```
+
+To exit, nano,
+
+```
+Ctrl + X
+```
