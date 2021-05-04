@@ -96,6 +96,10 @@ alias python3=python3.7
 sudo ln -s /usr/bin/python3.7 /usr/bin/python
 ```
 
+
+### Reboot Ubuntu [This is for changes in /etc/environment file, needs restart]
+
+
 start pyspark
 
 ```
