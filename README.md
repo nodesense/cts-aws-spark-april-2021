@@ -24,7 +24,7 @@ To check yarn
 http://192.168.93.128:8088/cluster
 
 
-
+https://www.slideshare.net/ApacheApex/introduction-to-hadoop-60884936?from_action=save
 
 
 ```
