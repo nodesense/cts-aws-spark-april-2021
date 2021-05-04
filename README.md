@@ -4,6 +4,17 @@
 ssh ubuntu@192.168.93.128
 ```
 
+
+```
+sudo apt install openssh-server
+sudo systemctl status ssh
+    to come out, press q 
+
+sudo ufw allow ssh
+ip a
+```
+
+
 # to install Anaconda 3.7 along with 3.8
 
 Open Anaconda prompt
