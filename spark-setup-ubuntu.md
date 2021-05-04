@@ -71,6 +71,8 @@ sudo apt-get install python3.7
 
 ```
 python3.7
+
+exit() to come out of python shell
 ```
 
 
