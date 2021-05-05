@@ -111,7 +111,7 @@ hdfs dfs -cp /test /test2
 Move files/directory from hdfs to hdfs
 
 ```
-hdfs -mv /test2 / test3
+hdfs dfs -mv /test2 / test3
 ```
 
 
