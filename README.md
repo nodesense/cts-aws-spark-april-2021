@@ -1,5 +1,8 @@
 # Linux ssh
 
+Open Git Bash in Windows
+
+then 
 ```
 ssh ubuntu@192.168.93.128
 ```
