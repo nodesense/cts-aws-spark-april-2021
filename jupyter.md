@@ -10,7 +10,7 @@ Two Options
 
 Using findspark 
 
-Open Anaconda Py37, run this command..
+Step 1: Open Anaconda Py37, run this command..
 
 ```
 pip install findspark
@@ -18,9 +18,11 @@ pip install findspark
 
 pip - package installeer for Python
 
-Open Jupyter (py37) from Windows Programs..
+Step 2: Open Jupyter (py37) from Windows Programs..
 
-Run this code..
+
+Step 3: Create a new notebook, save it as HelloSpark
+Run below code..
 
 ```
 import findspark
