@@ -32,6 +32,13 @@ https://www.slideshare.net/ApacheApex/introduction-to-hadoop-60884936?from_actio
 
 ```
 
+#### SPARK UI
+
+It will start from 4040, 4041.. look at console of pyspark, jupyter
+
+http://localhost:4040/jobs/
+
+
 
 
 ```
