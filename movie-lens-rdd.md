@@ -35,4 +35,5 @@ hdfs dfs -ls /ml-latest-small
 
 1. Read ratings.csv, ignore the first line, read the content as tuple, movieId as key
 2. Read movies.csv, ignore the first line, read the content as tuple, movieId as key
+3. 
 
