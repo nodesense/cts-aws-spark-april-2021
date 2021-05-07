@@ -101,3 +101,28 @@ ratingRdd.map ()
 
 
 ```
+
+```
+ sc.textFile
+ reparition
+           take group of records blindly, move into parition 
+ 
+ partitionBy - works with keyed rdd (key, value)
+            make partition based on data relevancy - smart, by default it uses portable_hash, function, same like hash
+            
+            paritionBy(4) # default it takes portable_hash as second arg
+            
+             (UK, (data))
+                 hashCode for UK = the value UK is passed to portable_hash('UK') , then return a hash code 
+                 partion = hash code %  max partitions 
+                         = 4234343 % 4 = result is partition 3
+                         
+                  The data (UK, (data)) shall be moved into parition 3
+            partitionBy(4, customPartitionerFunc)
+            
+            
+
+ portable_hash - default function for partitionBy
+ 
+
+```
