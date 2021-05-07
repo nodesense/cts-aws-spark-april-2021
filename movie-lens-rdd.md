@@ -32,8 +32,42 @@ hdfs dfs -ls /ml-latest-small
 ```
 
 ### Todo
-
+```
 1. Read ratings.csv, ignore the first line, read the content as tuple, movieId as key
-2. Read movies.csv, ignore the first line, read the content as tuple, movieId as key
-3. 
+   
+   userId, movieId, rating, timestamp
+   
+   line.split() ['1', '2', '4.0', '2323223232'] 
+                convert , userId, movieId to int() [1, 2, 4.0, 2323223232]
+                the result is in list format, we need to conver to tuple
+                
+                Key - 1 element
+                Value - Too many values to unpack...
+                (1, 2, 4.0, 2323223232), - fail in few cases = ERROR
+                
+                RIGHT ONE
+                Use movieId as a key, not user id, can be done using map function
+                (2, (1, 2, 4.0, 2323223232)) - RDD 1 is key/movieid, (1, 2, 4.0, 2323223232) is value
+                
+          Sort movies by movie rating asc, decending
+          Count ratings by movieID 
+          
+            movie_id,  count
+            2,          150 where 150 is count of ratings
+            
+           Find average for movie rating
+             movie_id    avg
+             2,           4.6
+           
+              
 
+3. Read movies.csv, ignore the first line, read the content as tuple, movieId as key
+
+
+   join the movies with ratings
+   join the movies with  average for movie rating 
+ 
+             movie_id    avg     title
+             2,           4.6   Shashank redemption
+             
+```
