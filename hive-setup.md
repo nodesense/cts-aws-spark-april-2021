@@ -79,3 +79,23 @@ hive>  DROP TABLE BRANDS;
 hive >  DROP DATABASE ordersdb;
 
 ```
+
+
+```
+
+create table test(id int ,name string ) clustered by (id) into 2 buckets stored as orc TBLPROPERTIES('transactional'='true');
+
+INSERT INTO test(id,name) values(1, 'Apple');
+ SELECT * from test;
+
+update test set name='Google' where id=1;
+
+ SELECT * from test;
+ 
+ delete from test;
+ 
+ SELECT * from test;
+ 
+ ```
+
+ 
