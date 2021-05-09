@@ -46,3 +46,28 @@ DROP TABLE employees_ext;
 SELECT * from employees;   
 
 ```
+
+```
+ insert into employees_ext (employee_id, name, dept) values(8,'krish','sales');
+```
+
+```
+ hdfs dfs -ls /employees
+  hdfs dfs -cat /employees/000000_0
+
+```
+
+```
+insert into employees_ext (employee_id, name, dept) values(9,'nila','sales');
+
+```
+```
+hdfs dfs -ls /employees
+
+you may notice /employees/000000_0_copy_1 created 
+
+hdfs dfs -cat /employees/000000_0
+hdfs dfs -cat /employees/000000_0_copy_1
+```
+
+  
