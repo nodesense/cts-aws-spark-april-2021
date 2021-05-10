@@ -6,9 +6,10 @@ JDBC Client application [our python,java, scala code, spark] shall connect to DB
 
 Then client application send queries to DB server, DB server execute queries and return the result.
 
-# Beeline
- -- Simple, JDBC client tool
- -- useful to connect as many databases available
+### Beeline
+
+-- Simple, JDBC client tool
+-- useful to connect as many databases available
  
  connect to hive using jdbc, using metastore_db location
  
