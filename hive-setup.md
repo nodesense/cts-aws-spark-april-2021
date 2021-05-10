@@ -17,9 +17,14 @@ HIVE_HOME=/opt/apache-hive-2.3.8
 ```
 
 ```
+export HIVE_HOME=/opt/apache-hive-2.3.8
+```
+
+
+```
 cp $HIVE_HOME/conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml.bak
 
-wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/kafka-workshop/master/hadoop/hive-site.xml
+wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spark-april-2021/main/hive-site.xml
 
 ls $HIVE_HOME/conf
 
