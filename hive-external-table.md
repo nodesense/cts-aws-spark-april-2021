@@ -1,3 +1,5 @@
+
+
 ```
 
 nano employees1.csv
@@ -31,6 +33,11 @@ hdfs dfs -put employees1.csv /employees
 hdfs dfs -put employees2.csv /employees
 
 ```
+
+```
+cd $HIVE_HOME
+```
+then run,
 
 ```
 $HIVE_HOME/bin/hive
