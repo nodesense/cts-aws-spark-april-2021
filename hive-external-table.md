@@ -1,22 +1,40 @@
 ```
 
 nano employees1.csv
+```
+paste below
 
-
+```
 1,jane,sales
 2,john,marketting
 
+```
+
+```
 nano employees2.csv
 
+```
+paste below
+```
 3,will,account
 4,smith,qa
 
+
+```
 hdfs dfs -mkdir /employees
 
 hdfs dfs -chmod 777 /employees
 
 hdfs dfs -put employees1.csv /employees
 hdfs dfs -put employees2.csv /employees
+
+```
+
+```
+$HIVE_HOME/bin/hive
+```
+
+```
 
 CREATE EXTERNAL TABLE IF NOT EXISTS employees_ext(
   employee_id INT, 
