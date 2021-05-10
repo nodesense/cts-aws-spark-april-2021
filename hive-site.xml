@@ -2,12 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
 
+<!--
 <property>
-<!-- gopal -->
+
     <name>hive.in.test</name>
     <value>true</value>
 </property>
-
+-->
 
 
 <property>
@@ -381,7 +382,7 @@
   </property>
   <property>
     <name>hive.metastore.uris</name>
-    <value/>
+	  <value>thrift://0.0.0.0:9093</value>
     <description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
   </property>
   <property>
