@@ -26,6 +26,8 @@ hdfs dfs -mkdir /employees
 hdfs dfs -chmod 777 /employees
 
 hdfs dfs -put employees1.csv /employees
+
+
 hdfs dfs -put employees2.csv /employees
 
 ```
