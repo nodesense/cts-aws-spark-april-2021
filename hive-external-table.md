@@ -106,3 +106,13 @@ hdfs dfs -cat /employees/000000_0_copy_1
 ```
 
  DROP TABLE employees_ext;
+
+```
+ hdfs dfs -rm /employees/employees1.csv
+```
+
+then in hive, 
+
+```
+select * from employees_ext;
+```
