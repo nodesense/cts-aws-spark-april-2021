@@ -79,6 +79,8 @@ hive> CREATE TABLE IF NOT EXISTS brands(id INT, name STRING);
 
 hive> INSERT INTO brands(id,name) values(1, 'Apple');
 
+hive>  insert into brands(id,name) values (3, 'Samsung'), (2, 'Google');
+
 hive> SELECT * from brands;
 
 hive>  DROP TABLE BRANDS;
