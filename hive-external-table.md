@@ -34,9 +34,13 @@ hdfs dfs -put employees2.csv /employees
 
 ```
 
+ 
+
 ```
 cd $HIVE_HOME
+
 ```
+
 then run,
 
 ```
