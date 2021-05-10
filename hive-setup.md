@@ -1,4 +1,6 @@
 ```
+cd ~
+
 wget https://mirrors.estointernet.in/apache/hive/hive-2.3.8/apache-hive-2.3.8-bin.tar.gz
 
 tar xf apache-hive-2.3.8-bin.tar.gz
