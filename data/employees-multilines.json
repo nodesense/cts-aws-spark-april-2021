@@ -1,0 +1,8 @@
+[
+{"name": "joe", 
+ "gender": "M", 
+ "salary":6000},
+{"name": "Mary", 
+ "gender": "F", 
+ "salary":8000}
+]
