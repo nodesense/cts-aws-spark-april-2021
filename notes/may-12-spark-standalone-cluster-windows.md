@@ -36,5 +36,13 @@ open  anaconda py37 command prompt
 pyspark  --master spark://192.168.1.110:7077 --driver-memory 6G --executor-memory 4G --executor-cores 2
 ```
 
+With speicific number of executors
+
+```
+pyspark  --master spark://192.168.1.110:7077 --driver-memory 6G --executor-memory 4G --executor-cores 2 --num-executors 1
+```
+
+
+
 Check the port numbers on console for Web UI,
  
