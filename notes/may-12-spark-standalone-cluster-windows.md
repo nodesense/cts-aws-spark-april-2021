@@ -21,7 +21,7 @@ copy the master url and paste in below command
 spark-class org.apache.spark.deploy.worker.Worker spark://192.168.1.110:7077
 ```
 
-Open command prompt, run spark shell with default config
+Open anaconda py37 command prompt, run spark shell with default config
 copy the master url and paste in below command
 ```
 pyspark --master spark://192.168.1.110:7077
@@ -30,7 +30,8 @@ pyspark --master spark://192.168.1.110:7077
 Stop the spark shell, 
 
 start the spark shell with specific requirements..
-
+open  anaconda py37 command prompt
+ 
 ```
 pyspark  --master spark://192.168.1.110:7077 --driver-memory 6G --executor-memory 4G --executor-cores 2
 ```
