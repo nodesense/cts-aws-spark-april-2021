@@ -26,4 +26,8 @@ filter
 groupBy invoiceId to find how many unique invoices or distinct 
 groupBy with invoice id, aggregate the sum of (Quantity * UnitPrice)
 
+
+Part 2
+
+ Define InvoiceDate as DateType  (Hint:  Spark Struct Type, while redefining Spark Session, use option with "dateFormat", with specific MM dd yyyy format"
 ```
