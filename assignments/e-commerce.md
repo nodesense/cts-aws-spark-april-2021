@@ -15,7 +15,7 @@ unzip e-commerce.zip
 you can find a file called "data.csv"
 
  upload the file into hadoop /ecommerce/data.csv 
-    hdfs dff -copyFromLocal...
+    using hdfs dfs 
 
  Jupyter with spark cluster - stop the cluster, 
                               start the cluster yourself
