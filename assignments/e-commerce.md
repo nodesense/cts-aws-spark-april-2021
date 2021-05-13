@@ -1,6 +1,6 @@
 ```
 
- create a directory called /ecommerce 
+ create a directory called /ecommerce  in HDFS
 
  download the ecommmerce.zip file from https://raw.githubusercontent.com/gopalakrishnan-subramani/data-engineering/main/e-commerce.zip , extract the file in linux home directory (cd ~)
     wget to download the file
