@@ -554,7 +554,10 @@
     <value>true</value>
     <description>Set this to true if multiple threads access metastore through JDO concurrently.</description>
   </property>
-  <property>
+
+	<!-- Gopal -->
+	<!--
+	<property>
     <name>javax.jdo.option.ConnectionURL</name>
     <value>jdbc:derby:;databaseName=metastore_db;create=true</value>
     <description>
@@ -563,7 +566,8 @@
       For example, jdbc:postgresql://myhost/db?ssl=true for postgres database.
     </description>
   </property>
-  <property>
+   -->
+	<property>
     <name>hive.metastore.dbaccess.ssl.properties</name>
     <value/>
     <description>
