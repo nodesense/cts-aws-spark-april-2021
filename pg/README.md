@@ -38,6 +38,14 @@ sudo chmod 644 /usr/share/java/postgresql-jdbc.jar
 sudo ln -s /usr/share/java/postgresql-jdbc.jar $HADOOP_HOME/lib/postgresql-jdbc.jar
 ```
 
+```
+cp $HIVE_HOME/conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml.bak
+
+wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spark-april-2021/main/pg/hive-site.xml
+
+```
+
+
 
 ```
 cd $HIVE_HOME
