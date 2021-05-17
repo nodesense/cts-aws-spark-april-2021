@@ -80,10 +80,10 @@ For enabling postgresql to accept connection from specific ip.
 sudo gedit  /etc/postgresql/12/main/pg_hba.conf 
 ```
 
-paste below line at end of the file
+paste below line at end of the file, replace the one you add if any with this.
 
 ```
-host    replication     all             192.168.93.128/32            md5
+host    all             all             0.0.0.0/0            md5
 ```
 
 Save and exit the editor
