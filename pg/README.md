@@ -28,6 +28,7 @@ metastore=#
 
 
 ```
+cd ~
 wget https://jdbc.postgresql.org/download/postgresql-42.2.20.jar
 sudo mv postgresql-42.2.20.jar /usr/share/java/postgresql-jdbc.jar
 
