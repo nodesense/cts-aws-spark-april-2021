@@ -27,7 +27,15 @@ metastore=#
 ```
 
 
+```
+wget https://jdbc.postgresql.org/download/postgresql-42.2.20.jar
+sudo mv postgresql-42.2.20.jar /usr/share/java/postgresql-jdbc.jar
 
+
+sudo chmod 644 /usr/share/java/postgresql-jdbc.jar
+
+sudo ln -s /usr/share/java/postgresql-jdbc.jar $HADOOP_HOME/lib/postgresql-jdbc.jar
+```
 
 
 ```
