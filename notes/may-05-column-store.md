@@ -49,3 +49,43 @@ Problems statement:
 Reading list
 
 1. https://blog.openbridge.com/how-to-be-a-hero-with-powerful-parquet-google-and-amazon-f2ae0f35ee04
+
+
+# Parquet
+
+Column based data file format...
+
+sales records
+
+1, United States of America, CUst...
+2, United States of America, cust 2
+3, India, customer
+..
+//\
+.. United Kingdom
+
+--
+
+Dictionary encoding..
+
+The file contains a mapping units
+United States of America - Assig value 1
+United Kingdom - 3
+India - Assig value 2 
+
+https://www.researchgate.net/profile/Martin-Grund-2/publication/224085785/figure/fig1/AS:650821096198146@1532179249871/Dictionary-Compression-for-Column-Stores.png
+
+Dictionary encoding, replace the text with unique numbers/shorthands
+
+1, 1, CUst...
+2, 1, cust 2
+3, 2, customer
+..
+//\
+.. 3\
+
+
+RLE -  Run Length Encoding
+
+https://www.researchgate.net/publication/331404982/figure/fig3/AS:731274784301057@1551360903174/A-run-length-coding-principle-example.png
+
