@@ -29,11 +29,15 @@ postgres=# exit
 
 ```
 
+check username and password exist, type mypassword for password
+
 ```
 psql -h localhost -U hiveuser -d metastore
 metastore=# exit
 ```
 
+
+Download JDBC driver for Spark/Python program to connect.. also for Hive meta store
 
 ```
 cd ~
@@ -46,6 +50,8 @@ sudo chmod 644 /usr/share/java/postgresql-jdbc.jar
 sudo ln -s /usr/share/java/postgresql-jdbc.jar $HADOOP_HOME/lib/postgresql-jdbc.jar
 ```
 
+Take updated config that has postgresql user credentials.
+
 ```
 cp $HIVE_HOME/conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml.bak
 
@@ -53,7 +59,7 @@ wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spar
 
 ```
 
-
+init schema
 
 ```
 cd $HIVE_HOME
