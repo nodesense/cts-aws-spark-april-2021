@@ -74,10 +74,13 @@ listen_addresses = '*'
 
 save and exit the editor
 
+For enabling postgresql to accept connection from specific ip. 
 
 ```
 sudo gedit  /etc/postgresql/12/main/pg_hba.conf 
 ```
+
+paste below line at end of the file
 
 ```
 host    replication     all             192.168.93.128/32            md5
