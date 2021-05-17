@@ -1,3 +1,10 @@
+ssh to ubuntu with gitbash
+
+```
+ssh ubuntu@192.168.93.128
+```
+
+
 ```
 
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
