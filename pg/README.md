@@ -102,3 +102,10 @@ init schema
 cd $HIVE_HOME
 $HIVE_HOME/bin/schematool -dbType postgres -initSchema
 ```
+
+if meta server already running, close it.
+
+```
+cd $HIVE_HOME
+$HIVE_HOME/bin/hive --service metastore
+```
