@@ -52,12 +52,6 @@ sudo ln -s /usr/share/java/postgresql-jdbc.jar $HADOOP_HOME/lib/postgresql-jdbc.
 
 Take updated config that has postgresql user credentials.
 
-```
-cp $HIVE_HOME/conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml.bak
-
-wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spark-april-2021/main/pg/hive-site.xml
-
-```
 
 Make postgres listen on ip 192.168.93.128. 
 Now use Ubuntu Desktop, Not SSH via gitbash.
@@ -92,6 +86,14 @@ Save and exit the editor
 sudo service postgresql restart
 ```
 
+Now take the latest config from github
+
+```
+mv $HIVE_HOME/conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml.bak
+
+wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spark-april-2021/main/pg/hive-site.xml
+
+```
 
 
 init schema
