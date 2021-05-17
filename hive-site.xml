@@ -13,7 +13,7 @@
 
 <property>
     <name>hive.server2.enable.doAs</name>
-    <value>false</value>
+    <value>true</value>
 </property>
    
 <property>
@@ -382,7 +382,7 @@
   </property>
   <property>
     <name>hive.metastore.uris</name>
-	  <value>thrift://192.168.93.128:9093</value>
+	  <value>thrift://192.168.93.128:9083</value>
     <description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
   </property>
   <property>
