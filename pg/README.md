@@ -39,5 +39,6 @@ sudo ln -s /usr/share/java/postgresql-jdbc.jar $HADOOP_HOME/lib/postgresql-jdbc.
 
 
 ```
-/opt/mapr/hive/hive-<version>/bin/schematool -dbType postgres -initSchema
+cd $HIVE_HOME
+$HIVE_HOME/bin/schematool -dbType postgres -initSchema
 ```
