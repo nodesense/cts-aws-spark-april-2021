@@ -37,3 +37,15 @@ userId,movieId,rating,timestamp
 scan means, 
 
 read the whole line "1,1,4.0,964982703", split by ",", convert to tuple, convert teh data type string int, string float,  then check the condition
+
+
+Problems statement:
+
+1. Reading 300 GB of data from disk, processing them..
+2. Reading and scanning all 500 million records.. 
+3. Consume more CPU, RAM, More storage to store 300 GB datam, more data transfrered on network IO
+
+
+Reading list
+
+1. https://blog.openbridge.com/how-to-be-a-hero-with-powerful-parquet-google-and-amazon-f2ae0f35ee04
