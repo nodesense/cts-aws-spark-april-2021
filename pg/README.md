@@ -25,12 +25,13 @@ $ sudo -u postgres psql
 
 postgres=# CREATE USER hiveuser WITH PASSWORD 'mypassword';
 postgres=# CREATE DATABASE metastore;
+postgres=# exit
 
 ```
 
 ```
-psql -h myhost -U hiveuser -d metastore
-metastore=#
+psql -h localhost -U hiveuser -d metastore
+metastore=# exit
 ```
 
 
