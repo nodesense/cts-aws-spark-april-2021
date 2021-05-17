@@ -59,6 +59,38 @@ wget -P $HIVE_HOME/conf https://raw.githubusercontent.com/nodesense/cts-aws-spar
 
 ```
 
+Make postgres listen on ip 192.168.93.128. 
+Now use Ubuntu Desktop, Not SSH via gitbash.
+
+```
+sudo gedit  /etc/postgresql/12/main/postgresql.conf
+```
+
+Find the word listen_adderss, change as below
+
+```
+listen_addresses = '*'
+```
+
+save and exit the editor
+
+
+```
+sudo gedit  /etc/postgresql/12/main/pg_hba.conf 
+```
+
+```
+host    replication     all             192.168.93.128/32            md5
+```
+
+Save and exit the editor
+
+```
+sudo service postgresql restart
+```
+
+
+
 init schema
 
 ```
