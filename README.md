@@ -21,6 +21,28 @@ Firefox with in ubuntu,
 
 http://192.168.93.128:50070
 
+Start meta data server in new ssh terminal, 
+
+```
+cd $HIVE_HOME 
+
+$HIVE_HOME/bin/hive --service metastore
+```
+
+
+start hiveservice2  in new ssh terminal, 
+```
+cd $HIVE_HOME
+
+$HIVE_HOME/bin/hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console
+```
+
+beline  in new ssh terminal, 
+
+```
+cd $HIVE_HOME
+$HIVE_HOME/bin/beeline -u jdbc:hive2://
+```
 
 To check yarn 
 
