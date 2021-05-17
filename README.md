@@ -16,6 +16,7 @@ below command shall prompt to enter password 4 times
 
 ```
 $HADOOP_HOME/sbin/start-all.sh
+```
 
 Firefox with in ubuntu,
 
