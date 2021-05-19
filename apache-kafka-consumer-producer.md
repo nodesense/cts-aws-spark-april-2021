@@ -47,5 +47,5 @@ $KAFKA_HOME/bin/kafka-console-consumer.sh --broker-list localhost:9092 --topic t
 
 
 ```
-$KAFKA_HOME/bin/kafka-console-consumer.sh --broker-list localhost:9092 --topic test --from-beginning
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 ```
