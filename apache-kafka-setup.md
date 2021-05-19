@@ -25,6 +25,8 @@ paste below
 KAFKA_HOME=/opt/kafka_2.12-2.8.0
 ```
 
+close the nano...
+
 ~/.bashrc - per user based file, whenever we open terminal/ssh, applied immediately.
 
 ```
@@ -38,6 +40,10 @@ export KAFKA_HOME=/opt/kafka_2.12-2.8.0
 
 export PATH=$PATH:$KAFKA_HOME/bin
 ```
+
+
+
+close the nano...
 
 ```
 exit
