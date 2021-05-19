@@ -45,7 +45,10 @@ Test tool/debug tool,
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test 
 ```
 
+Ctrl + C Stop the client
 
 ```
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 ```
+
+Ctrl + C Stop the client
