@@ -65,4 +65,12 @@ run zookeeper on terminal.. let this run always
 ZooKeeper is running on port 2181
 
 
+Open new gitbash, ssh into ubuntu
+
+```
+ $KAFKA_HOME/bin/kafka-server-start.sh  $KAFKA_HOME/config/server.properties
+```
+
+Kafka Broker started, running on Port 9092...
+
 
