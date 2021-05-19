@@ -9,7 +9,7 @@ tar xf kafka_2.12-2.8.0.tgz
 
 
 
-mv kafka_2.12-2.8.0 /opt
+sudo mv kafka_2.12-2.8.0 /opt
 
 sudo chmod 777 /opt/kafka_2.12-2.8.0
 
