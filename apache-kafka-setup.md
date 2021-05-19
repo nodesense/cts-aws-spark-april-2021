@@ -15,3 +15,35 @@ sudo chmod 777 /opt/kafka_2.12-2.8.0
 
 
 ```
+
+```
+sudo nano /etc/environment
+```
+paste below
+
+```
+KAFKA_HOME=/opt/kafka_2.12-2.8.0
+```
+
+~/.bashrc - per user based file, whenever we open terminal/ssh, applied immediately.
+
+```
+nano ~/.bashrc
+```
+
+paste below
+
+```
+export KAFKA_HOME=/opt/kafka_2.12-2.8.0
+
+export PATH=$PATH:$KAFKA_HOME/bin
+```
+
+```
+exit
+```
+
+login back to system using ssh, so that environment shall be applied
+
+
+
