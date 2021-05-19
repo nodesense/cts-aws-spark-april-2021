@@ -52,4 +52,17 @@ exit
 login back to system using ssh, so that environment shall be applied
 
 
+Open Gitbash, 
+
+ssh into the server
+
+run zookeeper on terminal.. let this run always
+
+```
+ $KAFKA_HOME/bin/zookeeper-server-start.  $KAFKA_HOME/config/zookeeper.properties
+```
+
+ZooKeeper is running on port 2181
+
+
 
