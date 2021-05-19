@@ -42,7 +42,7 @@ Consumer receive messsages from broker, print on console.
 Test tool/debug tool, 
 
 ```
-$KAFKA_HOME/bin/kafka-console-consumer.sh --broker-list localhost:9092 --topic test 
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test 
 ```
 
 
