@@ -20,6 +20,6 @@ $KAFKA_HOME/bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic 
 run the kafka consumer on separate terminals..
 
 ```
-$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic logs --from-beginning
 ```
 
