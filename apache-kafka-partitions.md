@@ -85,3 +85,19 @@ Ctrl + C
 ```
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic order_values --partition 2 --from-beginning --property print.key=true
 ```
+
+
+### Offset 
+
+Offset is an index/location where kafka message is stored.. 
+Every parition has its offset starting from 0..
+whenever new message is written into partition, offset value increment..
+
+We can read messages from specific offset from the specific partitions...
+
+read the messages from offset 2 onwards
+```
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic order_values --partition 2 --offset 2 --property print.key=true
+```
+
+Try to change above command partition number and offset values to check numbers..
