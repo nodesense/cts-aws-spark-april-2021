@@ -50,8 +50,8 @@ $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --to
 ### Running producer with key, when is present in message, uses hash to decide paritions
 
   For the given key, the message always goes into same partitions
-  
-     hash('USA') % NUM PARITIONS = partition number
+ 
+ hash('USA') % NUM PARITIONS = partition number
 
 #### run the producer..
 A producer with key:value message, where : is delimiter
