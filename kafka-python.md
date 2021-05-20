@@ -5,7 +5,7 @@ Open Anaconda prompt (py37)
 pip install kafka-python
 ```
 
-Create a topic...
+Create a topic in ubuntu, gitbash, ssh..
 
 ```
    $KAFKA_HOME/bin/kafka-topics.sh  --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic transactions
