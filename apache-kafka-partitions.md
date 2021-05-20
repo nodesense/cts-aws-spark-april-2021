@@ -93,7 +93,7 @@ Offset is an index/location where kafka message is stored..
 Every parition has its offset starting from 0..
 whenever new message is written into partition, offset value increment..
 
-We can read messages from specific offset from the specific partitions...
+We can read messages starting from specific offset from the specific partitions...
 
 read the messages from offset 2 onwards
 ```
