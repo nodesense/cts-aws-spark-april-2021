@@ -23,3 +23,21 @@ run the kafka consumer on separate terminals..
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic logs --from-beginning
 ```
 
+Ctrl + C to stop the consumer only...
+
+Now read the messages stored in a specific paritions only... 
+
+```
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic logs --partition 0 --from-beginning
+```
+Ctrl + C
+
+```
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic logs --partition 1 --from-beginning
+```
+Ctrl + C
+
+```
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic logs --partition 2 --from-beginning
+```
+
