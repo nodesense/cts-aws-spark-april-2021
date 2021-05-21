@@ -22,7 +22,7 @@ https://spark.apache.org/docs/2.4.0/structured-streaming-programming-guide.html
 
 
 ```
-pyspark
+start jupyter
 ```
 
 
