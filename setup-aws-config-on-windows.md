@@ -10,15 +10,7 @@ aws_secret_access_key =
 
 ```
 
-
-create a file called credentials in .aws folder/directory
-
-```
-[default]
-aws_access_key_id = 
-aws_secret_access_key = 
-
-```
+ 
 
 create a file called config in .aws folder/directory
 
