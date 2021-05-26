@@ -15,8 +15,12 @@ Then query data in Athena..
 in RDS create tabel called brands with id column int, name type text in dbeaver/vinsys machine..
 dont insert any records 
 
+**Run the RDSCrawler, it will add postgres_public_brands table in catalog db orderdb 
+
 Write a glue job in studio, that copy brands table data from orderdb 
 into RDS database postgres/public/brands (copy data lake data into rds)
+
+copy orderdb.brands [s3] to orderdb.postgres_public_brands [RDS/postgres]
 
 run the glue job
 
