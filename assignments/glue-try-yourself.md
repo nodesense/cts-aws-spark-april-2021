@@ -12,7 +12,7 @@ Then use crawler, on brands folder in s3, then creates a table "brands" like
 
 Then query data in Athena..
 
-in RDS create tabel called brands with id column int, name type text
+in RDS create tabel called brands with id column int, name type text in dbeaver/vinsys machine..
 dont insert any records 
 
 Write a glue job in studio, that copy brands table data from orderdb 
