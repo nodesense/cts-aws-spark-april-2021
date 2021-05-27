@@ -1,4 +1,4 @@
-
+```sql
 -- we will the orders in redshift with insert statement
 -- use glue, pull data from redshift, copy the data to glue
 -- source: REdshift, 
@@ -19,3 +19,4 @@ INSERT INTO orders VALUES(2, 300);
 INSERT INTO orders VALUES(3, 300);
 
 SELECT * FROM orders;
+```
