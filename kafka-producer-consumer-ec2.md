@@ -2,7 +2,7 @@
 Open gitbash 
 
 ```
-cd c:\
+cd c:
 
 cd keys
 
