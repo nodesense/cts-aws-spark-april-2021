@@ -42,6 +42,8 @@ sudo chmod 777 /opt/kafka_2.12-2.8.0
 nano ~/.bashrc
 ```
 
+paste below content..
+
 ```
 export KAFKA_HOME=/opt/kafka_2.12-2.8.0
 
