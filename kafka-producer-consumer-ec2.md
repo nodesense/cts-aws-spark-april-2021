@@ -6,7 +6,9 @@ cd c:
 
 cd keys
 
-cd:\keys>ssh -i key.pem ubuntu@ec2-xx-yy-zz-abc.us-east-2.compute.amazonaws.com
+chmod 400 <<key.pem>>
+
+cd:\keys>ssh -i <<key.pem>> ubuntu@ec2-xx-yy-zz-abc.us-east-2.compute.amazonaws.com
 ```
 
 once connected to ec2 instance, then install java/kafka etc.. 
