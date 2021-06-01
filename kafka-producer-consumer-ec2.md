@@ -62,3 +62,28 @@ logout
 ```
 
 and re-login..
+
+get broker details from MSK / Kafka portal , View Client information, plaintext...
+
+```
+$KAFKA_HOME/bin/kafka-topics.sh  --create --bootstrap-server b-2.demo-cluster-1.8wyx7i.c2.kafka.us-east-2.amazonaws.com:9092  --replication-factor 1 --partitions 1 --topic test
+ 
+
+$KAFKA_HOME/bin/kafka-topics.sh --list --bootstrap-server b-2.demo-cluster-1.8wyx7i.c2.kafka.us-east-2.amazonaws.com:9092
+ 
+
+$KAFKA_HOME/bin/kafka-topics.sh --describe --bootstrap-server b-2.demo-cluster-1.8wyx7i.c2.kafka.us-east-2.amazonaws.com:9092 --topic test
+```
+
+gitbash, ssh into ubuntu/ec2,
+
+```
+$KAFKA_HOME/bin/kafka-console-producer.sh  --broker-list b-2.demo-cluster-1.8wyx7i.c2.kafka.us-east-2.amazonaws.com:9092 --topic test
+```
+
+
+opne new gitbash, ssh into ubutnu/ec2
+```
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server b-2.demo-cluster-1.8wyx7i.c2.kafka.us-east-2.amazonaws.com:9092 --topic test 
+```
+
