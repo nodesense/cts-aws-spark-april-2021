@@ -18,7 +18,7 @@ Copy from Master public DNS or use the UI to copy the command
 ```
 
 ```
-ssh -i cts-gopal-key.pem hadoop@ec2-3-20-234-226.us-east-2.compute.amazonaws.com
+ssh -i yourkey-key.pem hadoop@ec2-1-11-22-33.us-east-2.compute.amazonaws.com
 
 
 ```
