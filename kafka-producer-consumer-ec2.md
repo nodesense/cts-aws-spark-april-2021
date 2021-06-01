@@ -48,3 +48,13 @@ export KAFKA_HOME=/opt/kafka_2.12-2.8.0
 export PATH=$PATH:$KAFKA_HOME/bin
 ```
 
+
+Ctrl + O to save the file
+
+Ctrl + X to exit nano
+
+```
+logout
+```
+
+and re-login..
