@@ -40,7 +40,7 @@ two column families
         salary:base 
         salary:bonus
 
-Add two rows , row-id??
+Add two rows , row-id, the row id is  string, could be any string value..
 
 Mary
 Joe
@@ -86,4 +86,16 @@ scan 'persons', LIMIT => 2
  scan 'persons', {COLUMNS => 'salary:base', FILTER => "ValueFilter(>=, 'binaryprefix:3000')"}
  scan 'persons', {COLUMNS => 'salary:base', FILTER => "ValueFilter(<, 'binaryprefix:4000')"}
 
+```
+
+to delete a specific column family attribute
+```
+
+delete 'persons', '1', 'salary:bonus'
+```
+
+to delete complete row cells
+
+```
+deleteall 'persons', '1'
 ```
