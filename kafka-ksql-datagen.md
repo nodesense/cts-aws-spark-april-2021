@@ -55,11 +55,11 @@ DESCRIBE users_stream;
 NON_PERSISTED QUERIES [Means, the output/result is not stored into KAfka Brokers]
 
 ```
-select userid, regionid, gender from users_stream;
+select userid, regionid, gender from users_stream EMIT CHANGES;
 
-select userid, regionid, gender from users_stream where gender='FEMALE';
+select userid, regionid, gender from users_stream where gender='FEMALE'  EMIT CHANGES;
 
-select userid, regionid, gender from users_stream where gender='MALE';
+select userid, regionid, gender from users_stream where gender='MALE'  EMIT CHANGES;
 ```
 PERSISTED QUERIES [CREATE STREAM AS ] results written to Kafka
 Will be runnign automatically, need to use TERMINATE command to stop them
@@ -72,7 +72,7 @@ CREATE STREAM users_male AS SELECT userid AS userid, regionid FROM users_stream 
 
  CREATE STREAM pageviews_stream (userid varchar, pageid varchar) WITH (kafka_topic='pageviews', value_format='JSON');
  
- select * from pageviews_stream;
+ select * from pageviews_stream  EMIT CHANGES;
 
 ```
 JOIN
@@ -80,14 +80,14 @@ JOIN
 ```
 CREATE STREAM user_pageviews_enriched_stream AS SELECT users_stream.userid AS userid, pageid, regionid, gender FROM pageviews_stream LEFT JOIN users_stream WITHIN 1 HOURS ON pageviews_stream.userid = users_stream.userid;
 
-select * from user_pageviews_enriched_stream;
+select * from user_pageviews_enriched_stream  EMIT CHANGES;
 ```
 
 Ctrl +C to exit
 ```
 CREATE TABLE pageviews_region_table WITH (VALUE_FORMAT='JSON') AS SELECT gender, regionid, COUNT() AS numusers FROM user_pageviews_enriched_stream WINDOW TUMBLING (size 60 second) GROUP BY gender, regionid HAVING COUNT() >= 1;
 
-select * from pageviews_region_table;
+select * from pageviews_region_table  EMIT CHANGES;
 
 ```
 
