@@ -52,4 +52,8 @@ logout
 ```
 
 
+```
+confluent local start
+```
 
+the above command starts zookeeper, broker, kafka connectors, kafka schema registry, kafka ksql
