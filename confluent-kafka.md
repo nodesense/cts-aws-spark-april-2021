@@ -57,3 +57,7 @@ confluent local start
 ```
 
 the above command starts zookeeper, broker, kafka connectors, kafka schema registry, kafka ksql
+
+```
+http://192.168.93.128:9021/clusters
+```
