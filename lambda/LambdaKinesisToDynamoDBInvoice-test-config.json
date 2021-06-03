@@ -1,8 +1,9 @@
 {
   "Records": [
     {
-      "data": "eyJJbnZvaWNlTm8iOiA1MzkyNjcsICJTdG9ja0NvZGUiOiAiODQ0MDZFIiwgIlF1YW50aXR5IjogMiwgIkRlc2NyaXB0aW9uIjogIlRPRE8iLCAiSW52b2ljZURhdGUiOiAiMDYvMDQvMjAyMSAwMTowMyIsICJVbml0UHJpY2UiOiA0LjAsICJDdXN0b21lcklEIjogMTc4NTAsICJDb3VudHJ5IjogIkxWIn0="
+      "kinesis": {
+        "data": "eyJJbnZvaWNlTm8iOiA1MzkyNjcsICJTdG9ja0NvZGUiOiAiODQ0MDZFIiwgIlF1YW50aXR5IjogMiwgIkRlc2NyaXB0aW9uIjogIlRPRE8iLCAiSW52b2ljZURhdGUiOiAiMDYvMDQvMjAyMSAwMTowMyIsICJVbml0UHJpY2UiOiA0LjAsICJDdXN0b21lcklEIjogMTc4NTAsICJDb3VudHJ5IjogIkxWIn0="
+      }
     }
   ]
 }
-
