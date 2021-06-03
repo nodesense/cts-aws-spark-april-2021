@@ -42,18 +42,21 @@ CREATE STREAM users_stream (userid varchar, regionid varchar, gender varchar) WI
 SHOW STREAMS;
 
 DESCRIBE users_stream;
+```
 
 NON_PERSISTED QUERIES [Means, the output/result is not stored into KAfka Brokers]
 
+```
 select userid, regionid, gender from users_stream;
 
 select userid, regionid, gender from users_stream where gender='FEMALE';
 
 select userid, regionid, gender from users_stream where gender='MALE';
-
+```
 PERSISTED QUERIES [CREATE STREAM AS ] results written to Kafka
 Will be runnign automatically, need to use TERMINATE command to stop them
 
+```
 CREATE STREAM users_female AS SELECT userid AS userid, regionid FROM users_stream where gender='FEMALE';
 
 CREATE STREAM users_male AS SELECT userid AS userid, regionid FROM users_stream where gender='MALE';
