@@ -79,9 +79,9 @@ CREATE TABLE pageviews_region_table WITH (VALUE_FORMAT='AVRO') AS SELECT gender,
 select * from pageviews_region_table;
 
 
-kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic USERS_FEMALE --from-beginning --property schema.registry.url="http://k5.nodesense.ai:8081"
+kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic USERS_FEMALE --from-beginning --property schema.registry.url="http://192.168.93.128:8081"
 
-kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic PAGEVIEWS_REGION_TABLE --from-beginning --property schema.registry.url="http://k5.nodesense.ai:8081"
+kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic PAGEVIEWS_REGION_TABLE --from-beginning --property schema.registry.url="http://192.168.93.128:8081"
 ```
 
 List the persisted queries
