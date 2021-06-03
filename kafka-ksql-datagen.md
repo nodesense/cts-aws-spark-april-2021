@@ -1,6 +1,8 @@
+Gitbash, you need to login into ubuntu using 
 
-# STREAMS
- 
+```
+ssh ubuntu@192.168.93.128
+```
 
 # KSQL 
 
@@ -26,7 +28,7 @@ ksql-datagen quickstart=pageviews format=avro topic=pageviews maxInterval=5000
 
 http://192.168.93.128:8081/subjects/pageviews-value/versions/1
 
-# KSQL Shell /Gitbash/SSH
+# KSQL Shell /Gitbash/SSH 3
 ```
 ksql 
 ```
@@ -81,11 +83,17 @@ CREATE TABLE pageviews_region_table WITH (VALUE_FORMAT='AVRO') AS SELECT gender,
 
 select * from pageviews_region_table;
 
+```
 
+# gitbash 4
+
+```
 kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic USERS_FEMALE --from-beginning --property schema.registry.url="http://192.168.93.128:8081"
 
 kafka-avro-console-consumer --bootstrap-server 192.168.93.128:9092 --topic PAGEVIEWS_REGION_TABLE --from-beginning --property schema.registry.url="http://192.168.93.128:8081"
 ```
+
+### on ksql prompt 
 
 List the persisted queries
 ```
