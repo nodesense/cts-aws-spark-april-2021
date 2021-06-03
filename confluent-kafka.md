@@ -41,3 +41,13 @@ REPLACE KAFKA_HOME with below
 export KAFKA_HOME=/opt/confluent-5.5.1
 ```
 
+
+
+logout from ubuntu...
+
+```
+logout
+```
+
+
+
