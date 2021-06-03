@@ -4,6 +4,12 @@ Gitbash, you need to login into ubuntu using
 ssh ubuntu@192.168.93.128
 ```
 
+At least one time to start kafka cluster,
+
+```
+confluent local start
+```
+
 # KSQL 
 
 ## Preparation
