@@ -9,8 +9,8 @@ def lambda_handler(event, context):
    invoiceTable = client.Table("invoices")
    
    for record in event["Records"]:
-      
-       encoded_payload = record["data"] # base64 string
+       kinesis = record["kinesis"]
+       encoded_payload = kinesis["data"] # base64 string
        # json_payload is the one actually send by kinesis producer
        json_payload = base64.b64decode(encoded_payload) # base64 to json string
        print("decoded ", json_payload)
