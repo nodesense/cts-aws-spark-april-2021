@@ -91,6 +91,24 @@ select * from pageviews_region_table  EMIT CHANGES;
 
 ```
 
+
+Now Run the Jupyter Kakfa-Invoice-Producer,
+run in KSQL..
+
+```
+
+CREATE STREAM invoices_stream(InvoiceNo int, StockCode varchar, Quantity varchar, Description varchar, InvoiceDate varchar, UnitPrice double, CustomerID int, Country varchar ) WITH (kafka_topic='invoices', value_format='JSON');
+
+SELECT * FROM invoices_stream EMIT CHANGES;
+
+CREATE TABLE invoices_country_count WITH (VALUE_FORMAT='JSON') AS SELECT Country, COUNT(InvoiceNo) AS NumInvoices FROM invoices_stream WINDOW TUMBLING (size 60 second) GROUP BY Country HAVING COUNT(InvoiceNo) >= 1; 
+
+
+
+SELECT * FROM invoices_country_count EMIT CHANGES;
+```
+
+
 # gitbash 4
 
 ```
