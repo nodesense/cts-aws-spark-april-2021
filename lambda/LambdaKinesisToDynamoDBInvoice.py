@@ -1,6 +1,8 @@
 import json
 import boto3
 import base64
+from decimal import Decimal
+
 
 def lambda_handler(event, context):
    print ("Event", event)
@@ -17,9 +19,11 @@ def lambda_handler(event, context):
        invoice = json.loads(json_payload) # load python object from json string
          
        invoice['InvoiceNo'] = str(invoice['InvoiceNo'])
-       invoice["Amount"] = invoice["Quantity"] *   invoice["UnitPrice"] 
-       invoice['Amount'] = str(invoice['Amount'])
+       invoice["Amount"] =    Decimal(invoice["UnitPrice"] * invoice["Quantity"])
+       invoice["UnitPrice"] = Decimal(invoice["UnitPrice"] )
        print("writing to dynamo", invoice)
-       
-       result = invoiceTable.put_item(Item={'InvoiceNo': invoice['InvoiceNo'], 'Amount':  invoice['Amount'] })
+        
+       #result = invoiceTable.put_item(Item={'InvoiceNo': invoice['InvoiceNo'], 'Amount':  invoice['Amount'] })
+       result = invoiceTable.put_item(Item=invoice)
+        
        print(result)    
