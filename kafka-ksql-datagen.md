@@ -19,7 +19,7 @@ Launch Gitbash Shell 1
 below produce the records every 5 seconds, write to topic users
 
 ```
-ksql-datagen quickstart=users format=json topic=users maxInterval=5000
+ksql-datagen quickstart=users format=json topic=users maxInterval=5000 iterations=100
 ```
 
 http://192.168.93.128:8081/subjects/users-value/versions/1
